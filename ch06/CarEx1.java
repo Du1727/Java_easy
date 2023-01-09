@@ -32,14 +32,6 @@ class Car1/* 클래스명 */{
 } // --class
 
 
-
-
-
-
-
-
-
-
 // .java로 선언된 클래스만 public 사용가능
 public class CarEx1 {
 

@@ -26,6 +26,7 @@ class Method2{
 		}
 	}
 	
+	
 }
 
 
