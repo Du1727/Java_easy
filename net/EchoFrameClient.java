@@ -78,17 +78,21 @@ implements ActionListener{
 		}
 	}
 	
+	
+	//
 	public void connect(String host){
+		System.out.println("connect() 메서드 들어옴 ");
 		try {
 			Socket sock = new Socket(host, PORT);
 			in = new BufferedReader(new InputStreamReader(sock.getInputStream()));
-			out = new PrintWriter(sock.getOutputStream(),true);	
+			out = new PrintWriter(sock.getOutputStream(),true);
 			//서버에서 최초로 보내는 메세지를 전달
 			ta.append(in.readLine() + '\n');
 			tf2.requestFocus();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 	}
 	
 	public static void main(String[] args) {

@@ -25,15 +25,23 @@ class Solution {
 	
 	public static void main(String[] args) {
 		
-		String aString = new String("a");
-		String bString = new String("a");
+		int a1 ;
+		int a2 ;
+		int a3 ;
 		
-		String cString = "b";
-		String dString = "b";
+		int num ;
+		int target = 999;
 		
-		System.out.println(aString == bString);
+		a1 = target/5;
+		a2 = target%5/3;
+		a3 = target%5%3/1;
 		
-		System.out.println(cString == dString);
+		num = a1+a2+a3;
+		System.out.println(a1);
+		System.out.println(a2);
+		System.out.println(a3);
+		System.out.println(num);
+		
 	}
 	
 }
