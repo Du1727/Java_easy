@@ -29,7 +29,7 @@ public class MemberMgr {
 			con = pool.getConnection();
 			sql = "SELECT * FROM tblMember"; // 쿼리문 삽입 공간
 			pstmt = con.prepareStatement(sql);// 쿼리문에 넣을 명령문을 가져옴
-			rs = pstmt.executeQuery();// 실행한 결과를 에 저장한다.
+			rs = pstmt.executeQuery(); // 실행한 결과를 에 저장한다.
 			while (rs.next()) {
 				MemberBean bean = new MemberBean();
 				bean.setId(rs.getInt("id"));
